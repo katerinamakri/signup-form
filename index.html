@@ -15,22 +15,27 @@
 <body>
   <div class="wrapper">
     <div class="container flexbox">
-      <section class="text-white">
+      <section class="text-white pr-3">
         <h1>Learn to code by watching others</h1>
-        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+        <p class="mt-3">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
       </section>
       <section class="flex-basis">
         <a class="btn rounded-lg w-100 text-center btn-blue text-white shadow-bottom" href="#"><strong>Try it free 7 days</strong> then $20/mo. thereafter</a>
-        <form class="card rounded-lg card-body mt-4 shadow-bottom padding">
-          <input type="text" class="form-control p-4" name="name" auto-complete="off" placeholder="First Name">
-          <input type="text" class="form-control mt-3 p-4" name="last-name" auto-complete="off" placeholder="Last Name">
-          <input type="email" class="form-control mt-3 p-4" name="email" auto-complete="off" placeholder="Email Address">
-          <input type="password" class="form-control mt-3 p-4" name="password" auto-complete="off" placeholder="Password">
-          <button class="btn btn-green mt-3 text-white" type="submit">CLAIM YOUR FREE TRIAL</button>
-          <p class="terms-services">By clicking the button, you are agreeing to our <a class="color" href="#">Terms and Services</a></p>
+        <form class="card rounded-lg card-body mt-4 shadow-bottom padding" id="form">
+          <input type="text" class="form-control p-4" name="first-name" id="first-name" auto-complete="off" placeholder="First Name" >
+          <p class="error" id="example">First Name cannot be empty</p>
+          <input type="text" class="form-control mt-3 p-4" name="last-name" auto-complete="off" placeholder="Last Name" >
+          <p class="error">Last Name cannot be empty</p>
+          <input type="email" class="form-control mt-3 p-4" name="email" auto-complete="off" placeholder="Email Address" >
+          <p class="error">Email cannot be empty</p>
+          <input type="password" class="form-control mt-3 p-4" name="password" auto-complete="off" placeholder="Password" >
+          <p class="error">Password cannot be empty</p>
+          <button class="btn btn-green mt-3 text-white" id="submit-btn" type="submit">CLAIM YOUR FREE TRIAL</button>
+          <p class="terms-services">By clicking the button, you are agreeing to our <a class="terms-color" href="#">Terms and Services</a></p>
         </form>
       </section>
     </div>
   </div>
+  <script src="./js/app.js"></script>
 </body>
 </html>
