@@ -6,7 +6,7 @@ body {
 		h1 { font-weight:700; }
 
 		.btn-blue { background-color:#6055A5; padding:0.8rem 0rem; }
-		.btn-green { background-color:#38CC8C; padding:0.8rem 0rem; box-shadow: inset 0rem -0.2rem 0 rgba(0,0,0,0.15);}
+		.btn-green { background-color:#38CC8C; padding:0.8rem 0rem; box-shadow: inset 0rem -0.2rem 0 rgba(0,0,0,0.15); letter-spacing:0.1rem; }
 		.shadow-bottom { box-shadow: 0 0.5rem 0rem rgba(0,0,0,.15); }
 		.flex-basis { flex-basis:85%; }
 		.padding { padding:2rem; }
@@ -19,10 +19,18 @@ body {
 		.error {
 			display:none; text-align: right; color:#FF7A7A; font-style:italic; font-size:0.8rem; margin:0.4rem 0rem; font-weight:500;
 		}
+
+		.block { display:block; }
+		.border { border:2px solid #FF7A7A !important; }
+		.background { background:url('../images/icon-error.svg') 95% no-repeat; }
 		
-		// input:valid {
-		// 	border:1px solid #6055A5;
-		// }
+		input:focus {
+			border:1px solid #6055A5;
+		}
+
+		button:hover {
+			opacity: 0.7
+		}
 
 		// input:invalid {
 		// 	border:2px solid #FF7A7A;

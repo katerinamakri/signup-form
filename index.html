@@ -23,13 +23,17 @@
         <a class="btn rounded-lg w-100 text-center btn-blue text-white shadow-bottom" href="#"><strong>Try it free 7 days</strong> then $20/mo. thereafter</a>
         <form class="card rounded-lg card-body mt-4 shadow-bottom padding" id="form">
           <input type="text" class="form-control p-4" name="first-name" id="first-name" auto-complete="off" placeholder="First Name" >
-          <p class="error" id="example">First Name cannot be empty</p>
-          <input type="text" class="form-control mt-3 p-4" name="last-name" auto-complete="off" placeholder="Last Name" >
-          <p class="error">Last Name cannot be empty</p>
-          <input type="email" class="form-control mt-3 p-4" name="email" auto-complete="off" placeholder="Email Address" >
-          <p class="error">Email cannot be empty</p>
-          <input type="password" class="form-control mt-3 p-4" name="password" auto-complete="off" placeholder="Password" >
-          <p class="error">Password cannot be empty</p>
+          <p class="error" id="first-name-error">First Name cannot be empty</p>
+          
+          <input type="text" class="form-control mt-3 p-4" name="last-name" id="last-name" auto-complete="off" placeholder="Last Name" >
+          <p class="error" id="last-name-error">Last Name cannot be empty</p>
+          
+          <input type="email" class="form-control mt-3 p-4" name="email" id="email" auto-complete="off" placeholder="Email Address" >
+          <p class="error" id="email-error">Email cannot be empty</p>
+          
+          <input type="password" class="form-control mt-3 p-4" name="password" id="password" auto-complete="off" placeholder="Password" >
+          <p class="error" id="password-error">Password cannot be empty</p>
+          
           <button class="btn btn-green mt-3 text-white" id="submit-btn" type="submit">CLAIM YOUR FREE TRIAL</button>
           <p class="terms-services">By clicking the button, you are agreeing to our <a class="terms-color" href="#">Terms and Services</a></p>
         </form>
