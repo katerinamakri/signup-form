@@ -1,13 +1,14 @@
 var form = document.getElementById('form');
-var firstName = document.getElementById('first-name');
-var lastName = document.getElementById('last-name');
-var email = document.getElementById('email');
-var password = document.getElementById('password');
+var firstName = document.forms["login-form"]["first-name"];
+var lastName = document.forms["login-form"]["last-name"];
+var email = document.forms["login-form"]["email"];
+var password = document.forms["login-form"]["password"];
 
 
 form.addEventListener('submit', validation);
 
 function validation(event) {
+	console.log(document.forms["login-form"]["first-name"].value)
 
 	if (firstName.value === undefined || firstName.value === '') {
    		// errors,icons should be displayed
@@ -37,6 +38,7 @@ function validation(event) {
 	if (email.value === undefined || email.value === '') {
    		// errors,icons should be displayed
    		// different border color
+		document.getElementById('email-error').innerHTML = "Email cannot be empty";
    		document.getElementById('email-error').classList.add("block");
    		document.getElementById('email').classList.add("border");
    		document.getElementById('email').classList.add("background");
