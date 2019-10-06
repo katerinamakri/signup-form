@@ -13,7 +13,9 @@
     "jit-grunt": "^0.10.0",
     "grunt-contrib-concat": "^1.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
